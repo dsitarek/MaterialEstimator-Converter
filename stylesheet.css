@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+h1 {
+  background-color: royalblue;
+  color: white;
+  padding: 40px;
+}
+
+body {
+  font-family: "Bree Serif", helvetica, arial;
+  min-width: 750px;
+  min-height: 400px;
+}
+
+button {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(253, 180, 71);
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: royalblue;
+  text-align: center;
+  transition: all 0.15s;
+}
+button:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  background-color: skyblue;
+  border-color: black;
+  color: black;
+  border: 1px solid black;
+}
+@media all and (max-width: 30em) {
+   a.button5 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+.list {
+  border: 1px solid black;
+  width: 60px;
+  margin: 2px;
+}
+
+.total {
+  width: 140px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+img {
+  float: right;
+  position: relative;
+  bottom: 63px;
+  border: 3px solid royalblue;
+  border-radius: 8px;
+  width: 190px;
+  margin-top: -20px;
+  background-color: royalblue;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.squaredOne {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-left: 50px auto;
+  background: #fcfff4;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.matsBlock {
+  width: 500px;
+}

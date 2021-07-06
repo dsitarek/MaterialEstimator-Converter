@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="index.js" defer></script>
+    <meta name="description" content="ATC Material Estimator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <h1>
+      <div class="titleDiv">Material Estimator/Converter</div>
+      <div class="trImg"><img src="calc.png" class="img1" /></div>
+    </h1>
+    <form id="inputForm" class="inputForm">
+      <p>Converts mm to inches, and list/total material.</p>
+      <input
+        type="text"
+        id="matsBlock"
+        class="matsBlock"
+        placeholder="Enter Lengths with spaces between"
+      />
+      <button type="button" id="submitBtn">Submit</button
+      ><button id="clearBtn">Clear</button
+      ><input type="checkbox" id="metric" class="squaredOne" />
+      <label for="metric"> Metric conversion</label>
+      <p id="total" class="total"></p>
+    </form>
+    <p1><ol id="matList"></ol></p1>
+  </body>
+</html>
