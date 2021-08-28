@@ -52,4 +52,4 @@ const splitter = () => {
 };
 
 document.getElementById("submitBtn").addEventListener("click", splitter);
-document.getElementById("clearBtn").addEventListener("cli
+document.getElementById("clearBtn").addEventListener("click", clearMats);
