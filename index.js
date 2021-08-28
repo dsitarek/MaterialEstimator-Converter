@@ -1,5 +1,5 @@
 let metricConversionCheckbox = document.getElementById("metric");
-let ListofLengths = "";
+let listOfLengths = "";
 let materialSum = undefined;
 let previousMaterialSum = 0;
 
@@ -39,17 +39,17 @@ showSum = () => {
 const splitter = () => {
   if (metricConversionCheckbox.checked) {
     materialInput().forEach(function (item) {
-      ListofLengths += "<li class='list'>" + (item / 25.4).toFixed(3) + "</li>";
+      listOfLengths += "<li class='list'>" + (item / 25.4).toFixed(3) + "</li>";
     });
   } else {
     materialInput().forEach(function (item) {
-      ListofLengths += "<li class='list'>" + Number(item).toFixed(3) + "</li>";
+      listOfLengths += "<li class='list'>" + Number(item).toFixed(3) + "</li>";
     });
   }
-  document.getElementById("matList").innerHTML = ListofLengths;
+  document.getElementById("matList").innerHTML = listOfLengths;
   calculateMaterialTotal();
   showSum();
 };
 
 document.getElementById("submitBtn").addEventListener("click", splitter);
-document.getElementById("clearBtn").addEventListener("click", clearMats);
+document.getElementById("clearBtn").addEventListener("click", clearMaterial);
