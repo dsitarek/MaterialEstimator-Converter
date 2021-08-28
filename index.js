@@ -11,6 +11,8 @@ const materialInput = () => {
 const clearMaterial = () => {
   document.getElementById("matList").innerHTML = "";
   document.getElementById("total").innerHTML = "";
+  previousMaterialSum = 0;
+  listOfLengths = ""
 };
 
 const calculateMaterialTotal = () => {
@@ -50,4 +52,4 @@ const splitter = () => {
 };
 
 document.getElementById("submitBtn").addEventListener("click", splitter);
-document.getElementById("clearBtn").addEventListener("click", clearMaterial);
+document.getElementById("clearBtn").addEventListener("cli
