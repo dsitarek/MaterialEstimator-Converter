@@ -51,5 +51,11 @@ const splitter = () => {
   listOfLengths = ''
 };
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+  splitter();
+}
+
 document.getElementById("submitBtn").addEventListener("click", splitter);
 document.getElementById("clearBtn").addEventListener("click", clearMaterial);
+document.getElementById("inputForm").addEventListener("submit",(e) => handleSubmit(e));
