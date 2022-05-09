@@ -1,7 +1,6 @@
 let metricConversionCheckbox = document.getElementById("metric");
 let listOfLengths = "";
 let materialSum = undefined;
-let previousMaterialSum = 0;
 
 const materialInput = () => {
   let material = document.getElementById("materialInput").value;
@@ -13,6 +12,7 @@ const clearMaterial = () => {
   document.getElementById("total").innerHTML = "";
   previousMaterialSum = 0;
   listOfLengths = ""
+  document.getElementById("materialInput").value = ""
 };
 
 const calculateMaterialTotal = () => {
@@ -24,8 +24,6 @@ const calculateMaterialTotal = () => {
   if (metricConversionCheckbox.checked) {
     materialSum = materialSum / 25.4;
   }
-  materialSum = materialSum + previousMaterialSum;
-  previousMaterialSum = materialSum;
   materialSum = Number(materialSum.toFixed(3));
   return materialSum;
 };
@@ -49,6 +47,8 @@ const splitter = () => {
   document.getElementById("matList").innerHTML = listOfLengths;
   calculateMaterialTotal();
   showSum();
+  document.getElementById("materialInput").value = ""
+  listOfLengths = ''
 };
 
 document.getElementById("submitBtn").addEventListener("click", splitter);
