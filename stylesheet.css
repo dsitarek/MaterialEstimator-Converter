@@ -75,3 +75,7 @@ img {
 .materialInput {
   width: 500px;
 }
+
+#matList {
+  margin-top: 3em;
+}
